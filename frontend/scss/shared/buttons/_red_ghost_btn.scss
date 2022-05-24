@@ -1,0 +1,21 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.red_ghost_btn {
+    @extend .btn;
+    background-color: none;
+    color: $color-red;
+    border: $color-red;
+    border-width: 1px;
+    border-style: solid;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border: $color-red;
+        background-color: $color-red;
+        color: $color-white;
+        border-width: 1px;
+        border-style: solid;
+    }
+}

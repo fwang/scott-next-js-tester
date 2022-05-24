@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import 'main-pages';
+
+.feature-not-available {
+    background-color: $color-feature-unavailable;
+}
+
+.auth-tags {
+    margin-top: -1px;
+}
+
+.auth-headings {
+    font-weight: 700;
+    font-size: 2em;
+    color: $color-text-ash;
+}
+
+.auth-headings-alt-large {
+    color: $color-text-white;
+    font-size: 4em;
+}
+
+.auth-headings-alt {
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 2em;
+    color: $color-text-white;
+    margin: 0;
+}
+
+.auth-sub-headings-alt {
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+    color: $color-text-white;
+}
+
+.auth-paragraph {
+    line-height: 25px;
+}
+
+.auth-paragraph-mobile {
+    line-height: 20px;
+    text-align: justify;
+}
+
+.qr-code {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.auth-flag {
+    width: 20px;
+    padding-bottom: 7px;
+}
+
+.forgot-pass-link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.forgot-pass-link a {
+    color: $color-text-ash;
+    text-decoration: none;
+}
+
+.forgot-pass-link a:hover {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.auth-btn {
+    border-radius: 8px;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-text-white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: $color-grey-disabled;
+        border-color: $color-primary-disabled;
+        cursor: default;
+    }
+}
+
+.auth-btn.link {
+    margin-top: 15px;
+    background-color: transparent;
+    border-color: $color-primary;
+    color: $color-primary;
+    padding: 12px 0px 12px 0px;
+}
+
+.auth-btn:active {
+    transform: scale(0.95);
+}
+
+.auth-btn.ghost {
+    margin-top: 0px;
+    background-color: transparent;
+    border-color: $color-border-white;
+}
+
+.auth-input-forms {
+    background-color: $color-block-grey;
+    border: none;
+    padding: 10px 13px;
+    margin: 8px 0;
+    width: 280px;
+    outline-color: $color-primary;
+}
+
+.auth-form-container {
+    background-color: $color-block-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.auth-overlay-full form {
+    position: absolute;
+    background: $color-primary-deep;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.auth-overlay-full input {
+    outline: none;
+}
+
+.auth-outer-container {
+    background-color: $color-auth-background;
+    height: 100vh;
+}
+
+.auth-container {
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-block-white;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.auth-left-container {
+    text-align: center;
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.auth-container.right-panel-active .auth-left-container {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.auth-right-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.auth-container.right-panel-active .auth-right-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.auth-overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in;
+    z-index: 100;
+}
+
+.auth-container.right-panel-active .auth-overlay-container {
+    transform: translateX(-100%);
+}
+
+.auth-overlay {
+    background: $color-primary-deep;
+    color: $color-text-white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in;
+}
+
+.auth-container.right-panel-active .auth-overlay {
+    transform: translateX(50%);
+}
+
+.auth-overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in;
+}
+
+.auth-overlay-left {
+    transform: translateX(-20%);
+}
+
+.auth-container.right-panel-active .auth-overlay-left {
+    transform: translateX(0);
+}
+
+.auth-overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.auth-container.right-panel-active .auth-overlay-right {
+    transform: translateX(20%);
+}
+
+.auth-social-container {
+    margin: 15px 0;
+}
+
+.auth-social-container a {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.auth-social-container a img {
+    border-radius: 8px;
+    margin-bottom: 5px;
+    max-width: unset;
+}
+
+.terms-checkbox {
+    font-size: 10px;
+    padding: 0px 30px 7px 30px;
+}
+
+.terms-checkbox a {
+    color: $color-primary;
+}
+
+.terms-text {
+    color: $color-text-white;
+}
+
+.tos-links {
+    color: $color-primary-lighter;
+
+    &:hover {
+        color: $color-primary-lighter;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .auth-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-block-white;
+        border-radius: 0px;
+        box-shadow: none;
+        overflow: hidden;
+        width: 768px;
+        max-width: 100%;
+        min-height: 520px;
+    }
+
+    .auth-left-container {
+        text-align: center;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .auth-right-container {
+        width: 100%;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .auth-container.right-panel-active .auth-right-container {
+        transform: translateX(0%);
+        opacity: 1;
+        z-index: 5;
+    }
+
+    .auth-overlay-container {
+        display: none;
+    }
+}
+
+.auth-logout-link {
+    color: $color-text-black;
+}

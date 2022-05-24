@@ -1,0 +1,19 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.secondary_btn {
+    @extend .btn;
+    background-color: $color-secondary;
+    color: $color-white;
+    border: none;
+    &:focus {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

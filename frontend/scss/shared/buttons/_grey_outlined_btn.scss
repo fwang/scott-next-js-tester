@@ -1,0 +1,19 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.grey_outlined_btn {
+    @extend .btn;
+    background-color: $color-text-white;
+    color: $color-text-light-grey;
+    border-color: $color-text-light-grey;
+    border-style: solid;
+    border-width: 1px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $color-text-light-grey;
+        color: $color-text-light-grey;
+        background-color: $color-grey-card;
+    }
+}

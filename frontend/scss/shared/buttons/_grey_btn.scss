@@ -1,0 +1,19 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.grey_btn {
+    @extend .btn;
+    background-color: $color-grey-card;
+    border-radius: 0;
+    border: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: $color-text-black;
+        border-width: 1px;
+        border-style: solid;
+        color: $color-primary-deep;
+        background-color: $color-grey-card;
+    }
+}

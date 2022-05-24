@@ -1,0 +1,5 @@
+//S.Y - Seems to be a 'reset' on ant-d's z index? I'm guessing brings everything to front.
+//ANTD - CUSTOM
+.ant-dropdown {
+    z-index: 10001 !important;
+}

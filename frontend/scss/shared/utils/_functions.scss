@@ -1,0 +1,157 @@
+%list-reset {
+	ul,
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+/// TODO: MOVE TO BETTER LOCATION, REPLACEMENT FOR ENTIRE LIBRARIES ABOVE
+// $prefix-for-webkit: true !default;
+// $prefix-for-mozilla: true !default;
+// $prefix-for-microsoft: true !default;
+// $prefix-for-opera: true !default;
+// $prefix-for-spec: true !default;
+
+// @mixin prefixer($property, $value, $prefixes) {
+// 	@each $prefix in $prefixes {
+// 		@if $prefix == webkit {
+// 			@if $prefix-for-webkit {
+// 				-webkit-#{$property}: $value;
+// 			}
+// 		} @else if $prefix == moz {
+// 			@if $prefix-for-mozilla {
+// 				-moz-#{$property}: $value;
+// 			}
+// 		} @else if $prefix == ms {
+// 			@if $prefix-for-microsoft {
+// 				-ms-#{$property}: $value;
+// 			}
+// 		} @else if $prefix == o {
+// 			@if $prefix-for-opera {
+// 				-o-#{$property}: $value;
+// 			}
+// 		} @else if $prefix == spec {
+// 			@if $prefix-for-spec {
+// 				#{$property}: $value;
+// 			}
+// 		} @else {
+// 			@warn "Unrecognized prefix: #{$prefix}";
+// 		}
+// 	}
+// }
+
+// @mixin transition($properties...) {
+// 	// Fix for vendor-prefix transform property
+// 	$needs-prefixes: false;
+// 	$webkit: ();
+// 	$moz: ();
+// 	$spec: ();
+
+// 	// Create lists for vendor-prefixed transform
+// 	@each $list in $properties {
+// 		@if nth($list, 1) == 'transform' {
+// 			$needs-prefixes: true;
+// 			$list1: -webkit-transform;
+// 			$list2: -moz-transform;
+// 			$list3: ();
+
+// 			@each $var in $list {
+// 				$list3: join($list3, $var);
+
+// 				@if $var != 'transform' {
+// 					$list1: join($list1, $var);
+// 					$list2: join($list2, $var);
+// 				}
+// 			}
+
+// 			$webkit: append($webkit, $list1);
+// 			$moz: append($moz, $list2);
+// 			$spec: append($spec, $list3);
+// 		} @else {
+// 			$webkit: append($webkit, $list, comma);
+// 			$moz: append($moz, $list, comma);
+// 			$spec: append($spec, $list, comma);
+// 		}
+// 	}
+
+// 	@if $needs-prefixes {
+// 		-webkit-transition: $webkit;
+// 		-moz-transition: $moz;
+// 		transition: $spec;
+// 	} @else {
+// 		@if length($properties) >= 1 {
+// 			@include prefixer(transition, $properties, webkit moz spec);
+// 		} @else {
+// 			$properties: all 0.15s ease-out 0s;
+// 			@include prefixer(transition, $properties, webkit moz spec);
+// 		}
+// 	}
+// }
+
+// @mixin transform($property: none) {
+// 	// none | <transform-function>
+// 	@include prefixer(transform, $property, webkit moz ms o spec);
+// }
+
+// @mixin transform-origin($axes: 50%) {
+// 	// x-axis - left | center | right  | length | %
+// 	// y-axis - top  | center | bottom | length | %
+// 	// z-axis -                          length
+// 	@include prefixer(transform-origin, $axes, webkit moz ms o spec);
+// }
+
+// $im-media-support: true !default;
+// @mixin media($conditions...) {
+// 	// scss-lint:disable SpaceAroundOperator
+// 	@if ($im-media-support and length($conditions) == 0) or
+// 		(
+// 			not
+// 				$im-media-support and
+// 				im-intercepts-static-breakpoint($conditions...)
+// 		)
+// 	{
+// 		@content;
+// 	} @else if ($im-media-support and length($conditions) > 0) {
+// 		@media #{unquote(parse-expression(nth($conditions, 1)))} {
+// 			// Recursive call
+// 			@include media(slice($conditions, 2)...) {
+// 				@content;
+// 			}
+// 		}
+// 	}
+// }
+
+// $breakpoints: (
+// 	'tn': 320px,
+// 	'xs': 480px,
+// 	'sm': 768px,
+// 	'md': 992px,
+// 	'lg': 1200px,
+// ) !default;
+
+// $media-expressions: (
+// 	'screen': 'screen',
+// 	'print': 'print',
+// 	'handheld': 'handheld',
+// 	'landscape': '(orientation: landscape)',
+// 	'portrait': '(orientation: portrait)',
+// 	'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
+// 	'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)',
+// ) !default;
+
+// @function parse-expression($expression) {
+// 	// If it is part of $media-expressions, it has no operator
+// 	// then there is no need to go any further, just return the value
+// 	@if map-has-key($media-expressions, $expression) {
+// 		@return map-get($media-expressions, $expression);
+// 	}
+
+// 	$operator: get-expression-operator($expression);
+// 	$dimension: get-expression-dimension($expression, $operator);
+// 	$prefix: get-expression-prefix($operator);
+// 	$value: get-expression-value($expression, $operator);
+
+// 	@return '(#{$prefix}-#{$dimension}: #{$value})';
+// }

@@ -1,0 +1,7 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+@import './primary_btn';
+
+.action_btn {
+    @extend .primary_btn;
+}

@@ -1,0 +1,81 @@
+// Shared Colours
+$color-primary-white: #e8eef1;
+$color-primary: #42b0f1;
+$color-primary2: #55d3fb;
+$color-primary3: #6de7fd;
+$color-primary4: #8df8fe;
+$color-secondary: #1e3d58;
+$color-secondary2: #274e71;
+$color-secondary3: #326591;
+$color-secondary4: #4082b6;
+$color-red: #e9565d;
+$color-red2: #f86f78;
+$color-red3: #fc8e98;
+$color-red4: #feb3be;
+$color-greyscale: #282829;
+$color-greyscale2: #58595b;
+$color-greyscale3: #babcbf;
+$color-greyscale4: #ededef;
+$color-green: #00c05a;
+$color-green2: #57b035;
+
+// External Colors
+$color-stripe: #635bff;
+$color-hubspot: #ff7a59;
+
+// Forgotten colors
+$color-white: #ffffff;
+$color-link: #06c;
+
+$color-grey: $color-greyscale2;
+
+$color-primary-dark: $color-greyscale;
+$color-primary-deep: $color-primary-dark;
+$color-primary-disabled: $color-secondary4;
+$color-primary-dark: $color-secondary;
+$color-primary-lighter: $color-primary4;
+
+$color-primary-deep: $color-primary-dark;
+$color-heading: $color-primary-dark;
+$color-text: $color-greyscale2;
+$color-text-white: $color-white;
+$color-text-black: $color-greyscale;
+$color-danger: $color-red;
+$color-danger--hover: $color-red2;
+$color-success: $color-green;
+$color-success--hover: $color-green2;
+$color-grey: $color-greyscale3;
+$color-soft-grey: $color-greyscale4;
+$color-grey-card: $color-greyscale4;
+$color-black: $color-greyscale;
+
+// Buttons
+$color-btn-seller: $color-red;
+$color-btn-seller--hover: $color-red2;
+$color-btn-bg-dark: $color-secondary;
+$color-btn-text: $color-white;
+$color-btn-text--hover: $color-white;
+$color-btn-bg-dark--hover: $color-greyscale;
+$color-btn-bg-black: $color-greyscale;
+
+// Portal Colours
+$color-portal-primary-darker: $color-secondary;
+$color-portal-primary: $color-secondary4;
+$color-secondary-portal: $color-secondary2;
+$color-text-portal: $color-greyscale2;
+$color-text-light-grey: $color-greyscale3;
+$color-contrast-portal: $color-white;
+$color-heading-portal: $color-greyscale;
+$color-dark-portal: $color-greyscale;
+$color-border-grey: $color-greyscale3;
+$color-grey-disabled: $color-greyscale3;
+$color-text-success: $color-green;
+
+// Auth Colours
+$color-feature-unavailable: $color-red4;
+$color-text-grey: $color-greyscale3;
+$color-text-ash: $color-greyscale;
+$color-block-grey: $color-greyscale4;
+$color-block-white: $color-white;
+$color-border-white: $color-white;
+$color-auth-background: $color-greyscale4;

@@ -1,0 +1,16 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.red_btn {
+    @extend .btn;
+    background-color: $color-red;
+    color: $color-white;
+    border: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-red;
+        color: $color-black;
+    }
+}

@@ -1,0 +1,8 @@
+@import '/scss/shared/utils/colours';
+
+.link_text {
+    color: $color-primary;
+    &:hover {
+        color: $color-primary3;
+    }
+}

@@ -1,0 +1,7 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+@import './red_btn';
+
+.delete_btn {
+    @extend .red_btn;
+}

@@ -1,0 +1,7 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+@import './green_btn';
+
+.submit_btn {
+    @extend .green_btn;
+}

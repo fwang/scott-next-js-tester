@@ -1,0 +1,9 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+@import './primary_ghost_btn';
+
+.draft_btn {
+    @extend .primary_ghost_btn;
+    // background-color: $color-danger;
+    // color: $color-text-white;
+}

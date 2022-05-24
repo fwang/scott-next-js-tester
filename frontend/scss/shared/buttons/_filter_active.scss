@@ -1,0 +1,18 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.filter_active {
+    @extend .btn;
+    background-color: $color-primary;
+    color: $color-white;
+    border-width: 1px;
+    &:focus {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &:active {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

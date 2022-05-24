@@ -1,0 +1,19 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.stripe_btn {
+    @extend .btn;
+    background-color: $color-stripe;
+    color: $color-white;
+    border: none;
+    &:focus {
+        background-color: $color-stripe;
+        color: $color-white;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-stripe;
+        color: $color-black;
+    }
+}

@@ -1,0 +1,18 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.green_ghost_btn {
+    @extend .btn;
+    background-color: none;
+    color: $color-green;
+    border: $color-green;
+    border-width: 1px;
+    border-style: solid;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-green2;
+        color: $color-white;
+    }
+}

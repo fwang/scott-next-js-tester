@@ -1,0 +1,22 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.primary_ghost_btn {
+    @extend .btn;
+    background-color: #ffffff00;
+    color: $color-primary;
+    border: $color-primary;
+    border-width: 1px;
+    border-style: solid;
+    &:focus {
+        background-color: none;
+        color: $color-primary;
+        background-color: #ffffff00;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

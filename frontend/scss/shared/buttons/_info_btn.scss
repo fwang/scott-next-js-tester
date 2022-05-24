@@ -1,0 +1,15 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.info_btn {
+    @extend .btn;
+    background-color: $color-btn-bg-dark;
+    color: $color-text-white;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-btn-bg-dark--hover;
+        color: $color-text-white;
+    }
+}

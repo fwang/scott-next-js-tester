@@ -1,0 +1,16 @@
+@import '/scss/shared/utils/colours';
+@import '/scss/shared/buttons/base';
+
+.green_btn {
+    @extend .btn;
+    background-color: $color-green;
+    color: $color-white;
+    border: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-green2;
+        color: $color-white;
+    }
+}
